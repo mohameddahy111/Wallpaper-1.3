@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "509501661950",
+    "firebase_url": "https://wishme-19979.firebaseio.com",
+    "project_id": "wishme-19979",
+    "storage_bucket": "wishme-19979.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509501661950:android:2ab48e0e8255e4e2f77baf",
+        "android_client_info": {
+          "package_name": "com.ymg.wallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-2fuCcCYZ_YsGl47Hmnr8Dl2zTpCnCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509501661950:android:11cc61c97442c277f77baf",
+        "android_client_info": {
+          "package_name": "com.ymg.wallpaper4k"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-2fuCcCYZ_YsGl47Hmnr8Dl2zTpCnCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509501661950:android:635aa59d029eaaeff77baf",
+        "android_client_info": {
+          "package_name": "com.ymg.whatsappgrouplink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-2fuCcCYZ_YsGl47Hmnr8Dl2zTpCnCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509501661950:android:4f17ece3b33fd658f77baf",
+        "android_client_info": {
+          "package_name": "wallpepper.apk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz-2fuCcCYZ_YsGl47Hmnr8Dl2zTpCnCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509501661950-bpp4vor8desdoopp9ubkks2kog5et56i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

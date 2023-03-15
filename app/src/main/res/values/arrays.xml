@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colors_load">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+    </array>
+</resources>

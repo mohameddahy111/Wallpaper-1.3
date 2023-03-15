@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:enabled="true"
+        app:cnb_iconColor="@color/bg_menu"/>
+    <item
+        android:id="@+id/activity"
+        android:icon="@drawable/ic_live"
+        android:title="Live Wallpaper"
+        app:cnb_iconColor="@color/bg_menu"/>
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_random"
+        android:title="Random"
+        app:cnb_iconColor="@color/bg_menu" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_popular"
+        android:title="Popular"
+        app:cnb_iconColor="@color/bg_menu" />
+
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/ic_categories"
+        android:title="Categories"
+        app:cnb_iconColor="@color/bg_menu" />
+</menu>

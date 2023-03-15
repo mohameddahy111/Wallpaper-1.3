@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bgMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:elevation="2dp">
+
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          app:elevation="2dp"
+          android:background="@color/bgMain"
+          app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+          app:subtitleTextColor="@color/MainText"
+          app:titleTextColor="@color/MainText"
+          />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <HorizontalScrollView
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:foregroundGravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/mygallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:textSize="15dp"
+            android:textColor="@color/MainText"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:id="@+id/textView6"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Download Wallpapers Before Applying Auto Wallpaper Changer" />
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/MainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Storage Path"
+            />
+
+        <TextView
+            android:textSize="12dp"
+            android:textColor="@color/MainSecText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Storage Location"
+            app:fontFamily="@font/regular" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:text="Important Notice"
+                android:textColor="@color/MainText"
+                android:textSize="16dp"
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:textSize="12dp"
+                android:textColor="@color/MainSecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(i) Download atleast 2 to 3 wallpapers before starting auto wallpaper changer."
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:textSize="12dp"
+                android:textColor="@color/MainSecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="(ii) To stop auto wallpaper changer simply apply any normal wallpaper from LitWallz."
+                app:fontFamily="@font/regular" />
+
+            <TextView
+                android:textSize="12dp"
+                android:textColor="@color/MainSecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:text="(iii) To delete wallpaper, long press on wallpaper and click on delete."
+                app:fontFamily="@font/regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:id="@+id/lla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/btnSetWallpaper"
+                android:background="@drawable/loading_bg"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="10dp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Set Wallpaper" />
+
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/btnConfigure"
+                android:background="@drawable/loading_bg"
+                android:layout_width="140dp"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Settings" />
+        </LinearLayout>
+
+        <TextView
+            android:textSize="10dp"
+            android:textColor="@color/MainSecText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="This feature is currently in beta, so you may encounter some issues."
+            app:fontFamily="@font/regular" />
+
+        <TextView
+            android:textSize="10dp"
+            android:textColor="@color/MainSecText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you find any issue or bugs please report them through &quot;Contact Us&quot; from Main Menu."
+            app:fontFamily="@font/regular" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

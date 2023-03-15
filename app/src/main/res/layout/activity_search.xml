@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activitys.SearchActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitleTextColor="@color/MainText"
+            app:titleTextColor="@color/MainText"
+            android:background="@color/bgMain"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_above="@id/adView"
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/lyt_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bgMain">
+
+                <include
+                    android:id="@+id/lyt_no_item"
+                    layout="@layout/layout_no_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="48dp"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ProgressBar
+
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+                <RelativeLayout android:gravity="center"
+                    android:id="@+id/relativeLayoutLoadMore"
+                    android:background="@drawable/loading_bg"
+                    android:visibility="gone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="50dp"
+                    android:layout_alignParentBottom="true">
+
+                    <com.leo.simplearcloader.SimpleArcLoader
+                        android:visibility="visible"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:arc_colors="@array/colors_load"
+                        app:arc_margin="3dp"
+                        app:arc_speed="medium"
+                        app:arc_style="simple_arc"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

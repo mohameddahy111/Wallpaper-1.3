@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgMain">
+
+        <include
+            android:id="@+id/lyt_no_item"
+            layout="@layout/layout_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlFeatured"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager_featured_posts"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:background="@color/bgMain"
+            tools:targetApi="lollipop" >
+
+        </androidx.viewpager.widget.ViewPager>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="200dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="140dp"
+                android:background="@android:color/transparent"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                android:layout_alignParentEnd="true"
+                app:tabMaxWidth="12dp"
+                app:tabIndicatorHeight="0dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/pager_featured_posts"
+            android:id="@+id/recyclerView"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <RelativeLayout android:gravity="center"
+            android:id="@+id/relativeLayoutLoadMore"
+            android:background="@drawable/loading_bg"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true">
+
+            <com.leo.simplearcloader.SimpleArcLoader
+                android:visibility="visible"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:arc_colors="@array/colors_load"
+                app:arc_margin="3dp"
+                app:arc_speed="medium"
+                app:arc_style="simple_arc"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

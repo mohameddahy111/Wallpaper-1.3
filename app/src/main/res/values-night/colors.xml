@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="MainMenu">#ffffff</color>
+    <color name="MainOpacityText">#30ffffff</color>
+    <color name="MainSecText">#80ffffff</color>
+    <color name="MainSecondText">#b0bec5</color>
+    <color name="MainText">#ffffff</color>
+    <color name="MainUploadBG">#10ffffff</color>
+    <color name="MainUploadTint">#dde3ec</color>
+    <color name="SubscribeBG">#10ffffff</color>
+    <color name="SubscriptionBG">#1a1c29</color>
+    <color name="bgMain">#111422</color>
+    <color name="mainthirty">#30ffffff</color>
+
+</resources>

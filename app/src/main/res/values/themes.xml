@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.YMGWallpaper" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/bgMain</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/bold</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.YMGWallpaper.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    /for About Dialog
+    <style name="DialogCustomTheme" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Theme.YMGWallpaper.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.YMGWallpaper.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MaterialSearchViewStyle" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColor">@color/MainText</item>
+        <item name="android:textColorHint">@color/mainthirty</item>
+        <item name="android:hint">@string/search_hint</item>
+        <item name="searchBackIcon">@drawable/ic_arrow_back_black</item>
+        <item name="searchBackground">@color/bgMain</item>
+        <item name="searchCloseIcon">@drawable/ic_close</item>
+        <item name="searchSuggestionBackground">@android:color/white</item>
+    </style>
+
+</resources>

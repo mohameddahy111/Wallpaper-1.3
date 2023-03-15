@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="@android:color/black"
+    tools:context=".Activitys.WallpaperDetailsActivity">
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loading.."
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+<!--        <com.ymg.wallpaper.Utils.TextureVideoView-->
+<!--            android:id="@+id/videoView"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            android:layout_centerInParent="true"/>-->
+
+    <VideoView android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"/>
+
+    <ImageView
+        android:id="@+id/ivImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <RelativeLayout android:gravity="center"
+        android:id="@+id/relativeLayoutLoadMore"
+        android:background="@drawable/loading_bg"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp">
+
+        <com.leo.simplearcloader.SimpleArcLoader
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:arc_colors="@array/colors_load"
+            app:arc_margin="3dp"
+            app:arc_speed="medium"
+            app:arc_style="simple_arc"/>
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="false">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="6dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <include layout="@layout/bottom_sheet" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

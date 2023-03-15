@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:background="#111422"
+    tools:context=".Activitys.CropWallpaperActivity">
+
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/CropImageView"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:elevation="0dp"
+            android:layout_marginTop="20dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:subtitleTextColor="@color/MainText"
+            app:titleTextColor="@color/MainText"
+            android:background="@android:color/transparent"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout android:gravity="center"
+        android:id="@+id/relativeLayoutLoadMore"
+        android:background="@drawable/loading_bg"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp">
+
+        <com.leo.simplearcloader.SimpleArcLoader
+            android:visibility="visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:arc_colors="@array/colors_load"
+            app:arc_margin="3dp"
+            app:arc_speed="medium"
+            app:arc_style="simple_arc"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonSetWallpaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/app_name"
+        app:fabSize="normal"
+        android:src="@drawable/ic_edit"
+        app:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

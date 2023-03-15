@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">4K Wallpaper</string>
+
+    <string name="app_copyright">Copyright 2020 YMG Developers \n All Rights reserved</string>
+
+    <!-- NO NEED TO CHANGE ANYTHING -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- BASIC STRINGS -->
+    <string name="menu_auto">Auto Wallpaper</string>
+    <string name="menu_favorite">Favorites</string>
+    <string name="menu_rate">Rate the App</string>
+    <string name="menu_share">Share this App</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_night">Dark Mode</string>
+    <string name="dev_name">YMG-Developers</string>
+    <string name="version_label">Current Version</string>
+    <string name="storage">Wallpaper Save Location</string>
+    <string name="storagelocation">Internal Storage/</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="label_cache">Remove image cache from your storage which created after loading
+        wallpaper thumbnails. Currently : </string>
+    <string name="title_notification">Push Notification</string>
+    <string name="label_notification">Want Wallpaper Notifications from </string>
+    <string name="policy_privacy">Privacy Policy</string>
+    <string name="whoops">Whoops!!</string>
+    <string name="no_wallpaper_found">No Wallpaper Found.</string>
+    <string name="wallpapers">Wallpapers</string>
+    <string name="option_retry">Retry</string>
+    <string name="favorite_added">Wallpaper Added to Favorite</string>
+    <string name="favorite_removed">Wallpaper Removed From Favorite</string>
+    <string name="views">Views</string>
+    <string name="downloads">Downloads</string>
+    <string name="sets">Sets</string>
+    <string name="size">Size</string>
+    <string name="resolution">Resolution</string>
+
+    <string name="email_body_text">Your Email Body Text here</string>
+    <string name="email">example@gmail.com</string>
+
+    <!-- SETTING PAGE -->
+    <string name="search_hint">Which wallpaper you want?</string>
+    <string name="dialog_option_cancel">Cancel</string>
+    <string name="msg_clearing_cache">Clear CacheAre you sure want to clear cache?</string>
+    <string name="msg_please_wait">Please Wait…</string>
+    <string name="msg_cache_cleared">Cache has been cleared !</string>
+    <string name="dialog_option_yes">Yes</string>
+    <string name="msg_clear_cache">Clear Cache</string>
+    <string name="display_wallpaper">Display Wallpaper</string>
+    <string name="wallpaper_columes">2 Columes</string>
+    <string name="msg_about_version">Version</string>
+
+    <!-- POPUP PERMISSION -->
+    <string name="terms_amp_condition">Permission Required</string>
+    <string name="tv_decline_policy">Later</string>
+    <string name="permission_use_text">"Don't worry. This is standard permission and WallpaperX
+        would not be use the access for any other use than mentioned."</string>
+    <string name="media_and_storage">Media &amp; Storage</string>
+    <string name="needed_access">WallpaperX needs access to following</string>
+    <string name="access_download_videos">Allowing Best Quotes &amp; Status to access your gallery &amp; files enables you to store photos</string>
+    <string name="cv_accept_policy">Give Permission</string>
+
+    <!-- NO NEED TO CHANGE ANYTHING -->
+    <string name="preferences_doubletap_default">false</string>
+    <string name="preferences_doubletap_key">doubletap</string>
+    <string name="preferences_doubletap_summary">Double tap to change wallpaper</string>
+    <string name="preferences_doubletap_title">Change on double tap</string>
+    <string name="preferences_duration_default">60000</string>
+    <string name="preferences_duration_default1">120000</string>
+    <string name="preferences_duration_key">duration</string>
+    <string name="preferences_duration_summary">Select duration to change wallpaper automatically</string>
+    <string name="preferences_duration_title">Duration</string>
+    <string name="preferences_fit_in_screen_default">false</string>
+    <string name="preferences_fit_in_screen_key">fit_in_screen</string>
+    <string name="preferences_fit_in_screen_summary">Fit in the screen instead of filling the screen</string>
+    <string name="preferences_fit_in_screen_title">Fit in screen</string>
+    <string name="preferences_folder_default">/sdcard/DCIM/100MEDIA</string>
+    <string name="preferences_folder_key">folder</string>
+    <string name="preferences_key">preferences</string>
+    <string name="preferences_random_default">false</string>
+    <string name="preferences_random_key">random</string>
+    <string name="preferences_random_summary">Change wallpaper in random order</string>
+    <string name="preferences_random_title">Random</string>
+    <string name="preferences_recurse_default">false</string>
+    <string name="preferences_recurse_key">recurse</string>
+    <string name="preferences_rotate_default">false</string>
+    <string name="preferences_rotate_key">rotate</string>
+    <string name="preferences_rotate_summary">Keep original screen orientation of photos</string>
+    <string name="preferences_rotate_title">Do not rotate</string>
+    <string name="preferences_screen_awake_default">true</string>
+    <string name="preferences_screen_awake_key">screen_awake</string>
+    <string name="preferences_screen_awake_summary">Change wallpaper every time when you unlock your phone</string>
+    <string name="preferences_screen_awake_title">Change on lock unlock</string>
+    <string name="preferences_scroll_default">false</string>
+    <string name="preferences_scroll_key">scroll</string>
+    <string name="no_photos_found_1">No wallpapers found in selected folder</string>
+    <string name="no_photos_found_2">add 2-3 wallpapers before</string>
+    <string name="no_photos_found_3">starting auto wallpaper changer</string>
+    <!-- NO NEED TO CHANGE ANYTHING -->
+</resources>
